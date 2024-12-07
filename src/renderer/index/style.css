@@ -1,0 +1,156 @@
+body {
+    overflow: hidden;
+    font-family: "Microsoft YaHei", sans-serif;
+    user-select: none;
+}
+
+#launch-game-btn {
+    display: block;
+    position: absolute;
+    bottom: 100px;
+    right: 160px;
+    width: 250px;
+    height: 80px;
+    border-radius: 6px;
+    border-style: none;
+    font-size: 32px;
+    background-color: #ffc450;
+    color: #704a1d;
+}
+
+#launch-game-btn:hover {
+    background-color: #ffcc6c;
+}
+
+#launch-game-btn:active {
+    background-color: #ffbc3b;
+}
+
+#topbar {
+    background-color: #141414;
+    width: 1280px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.topbar-btn {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.topbar-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+#newtitle {
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    color: white;
+    font-size: 16px;
+    width: min-content;
+    height: 16px;
+    padding: 12px;
+}
+
+#version {
+    position: absolute;
+    bottom: 2px;
+    left: 185px;
+    color: #363636;
+    font-size: 15px;
+    width: min-content;
+    height: 15px;
+    padding: 12.5px;
+}
+
+#minimize-btn {
+    position: absolute;
+    top: 0px;
+    right: 45px;
+}
+
+#minimize-btn:hover {
+    background-color: #353535;
+}
+
+#minimize-btn:active {
+    background-color: #313131;
+}
+
+#close-btn {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+
+#close-btn:hover {
+    background-color: #f55b31;
+}
+
+#close-btn:active {
+    background-color: #d8502b;
+}
+
+#sidebar-container {
+    position: absolute;
+    right: 0px;
+    width: 95px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: 26.5px;
+}
+
+.sidebar-btn:hover {
+    outline: 3px solid #ffd284;
+}
+
+.sidebar-btn img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+#mys-icon {
+    position: relative;
+    top: 45px;
+}
+
+#wiki-icon {
+    position: relative;
+    top: 90px;
+}
+
+#github-icon {
+    position: relative;
+    top: 135px;
+}
+
+#settings-icon {
+    position: relative;
+    top: 180px;
+}
+
+#main-container {
+    background-image: url("../resources/images/bg/default_v1.0.png");
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}

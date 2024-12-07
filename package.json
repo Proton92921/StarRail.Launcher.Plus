@@ -1,0 +1,75 @@
+{
+  "name": "starrail.launcher.plus",
+  "version": "0.2.0-alpha",
+  "description": "An Electron-based Honkai:Star Rail launcher with advanced features.",
+  "keywords": [
+    "Electron",
+    "StarRail",
+    "Launcher"
+  ],
+  "main": "./src/main/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "test": "electron ."
+  },
+  "author": "Proton921",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.2.1",
+    "@electron-forge/maker-deb": "^6.2.1",
+    "@electron-forge/maker-rpm": "^6.2.1",
+    "@electron-forge/maker-squirrel": "^6.2.1",
+    "@electron-forge/maker-zip": "^6.2.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.2.1",
+    "electron": "^25.2.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-store": "^8.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Proton921/StarRail.Launcher.Plus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Proton921/StarRail.Launcher.Plus/issues"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "name": "StarRail.Launcher.Plus",
+        "appVersion": "0.2.0-alpha",
+        "icon": "./src/icons/icon-256",
+        "appCopyright": "Proton921(wzt1785827887@163.com)",
+        "win32metadata": {
+          "ProductName": "StarRail.Launcher.Plus Windows",
+          "FileDescription": "StarRail.Launcher.Plus for Windows"
+        }
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "StarRail.Launcher.Plus"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}

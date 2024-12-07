@@ -1,0 +1,31 @@
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    user-select: none;
+    background-color: white;
+}
+
+#topbar {
+    background-color: white;
+    width: 800px;
+    height: 65px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#newtitle {
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    color: black;
+    font-size: 16px;
+    width: min-content;
+    height: 22px;
+    padding: 12px;
+}
+
+#close-btn {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
