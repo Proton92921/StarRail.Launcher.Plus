@@ -35,6 +35,17 @@ body {
     left: 0px;
 }
 
+#topbar-title-container {
+    width: 1200px;
+    height: 40px;
+    -webkit-app-region: drag;
+}
+
+#topbar-btn-container {
+    width: 80px;
+    height: 40px;
+}
+
 .topbar-btn {
     width: 20px;
     height: 20px;

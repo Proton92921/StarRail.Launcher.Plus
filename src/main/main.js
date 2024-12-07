@@ -4,12 +4,15 @@ const { access, constants } = require('fs')
 const { exec, execFile } = require('child_process')
 const Store = require('electron-store')
 const store = new Store()
+const args = require('minimist')(process.argv.slice(2))
 
-if (require('electron-squirrel-startup')) app.quit()
+const flagTest = args['env'] === 'test' ? true : false
+const setTitleBarStyle = args['env'] === 'test' ? 'default' : 'hidden';
 
 app.on("ready", () => {
     const mainWindow = new BrowserWindow({
-        //titleBarStyle: 'hidden',
+        titleBarStyle: setTitleBarStyle,
+        frame: flagTest,
         show: false,
         resizable: false,
         width: 1280,
@@ -53,7 +56,7 @@ app.on("ready", () => {
 
     ipcMain.on('openSettings', () => {
         const settingsWindow = new BrowserWindow({
-            //titleBarStyle: 'hidden',
+            titleBarStyle: setTitleBarStyle,
             parent: mainWindow,
             backgroundColor: '#FFFFFF',
             show: false,

@@ -12,9 +12,9 @@
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "test": "electron ."
+    "test": "electron . --env=test"
   },
-  "author": "Proton921",
+  "author": "Proton92921",
   "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^6.2.1",
@@ -26,15 +26,15 @@
     "electron": "^25.2.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0",
-    "electron-store": "^8.1.0"
+    "electron-store": "^8.1.0",
+    "minimist": "^1.2.8"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Proton921/StarRail.Launcher.Plus.git"
+    "url": "https://github.com/Proton92921/StarRail.Launcher.Plus.git"
   },
   "bugs": {
-    "url": "https://github.com/Proton921/StarRail.Launcher.Plus/issues"
+    "url": "https://github.com/Proton92921/StarRail.Launcher.Plus/issues"
   },
   "config": {
     "forge": {
@@ -42,7 +42,7 @@
         "name": "StarRail.Launcher.Plus",
         "appVersion": "0.2.0-alpha",
         "icon": "./src/icons/icon-256",
-        "appCopyright": "Proton921(wzt1785827887@163.com)",
+        "appCopyright": "Proton92921(1785827887@qq.com)",
         "win32metadata": {
           "ProductName": "StarRail.Launcher.Plus Windows",
           "FileDescription": "StarRail.Launcher.Plus for Windows"
